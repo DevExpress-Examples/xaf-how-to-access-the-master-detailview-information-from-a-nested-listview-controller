@@ -1,4 +1,4 @@
-<%--
+﻿<%--
 {************************************************************************************}
 {                                                                                    }
 {   DO NOT MODIFY THIS FILE!                                                         }
@@ -45,36 +45,36 @@
 {************************************************************************************}--%>
 
 <%@ Control Language="vb" AutoEventWireup="true" Inherits="InplaceEditor" Codebehind="InplaceEditor.ascx.vb" %>
-<%@ Register Assembly="DevExpress.Web.ASPxScheduler.v12.2" Namespace="DevExpress.Web.ASPxScheduler" TagPrefix="dxwschs" %>
-<%@ Register Assembly="DevExpress.Web.ASPxScheduler.v12.2" Namespace="DevExpress.Web.ASPxScheduler.Controls"
-	TagPrefix="cc1" %>
-<%@ Register Assembly="DevExpress.Web.v12.2" Namespace="DevExpress.Web.ASPxEditors"
-	TagPrefix="dxe" %>
+<%@ Register Assembly="DevExpress.Web.ASPxScheduler.v13.1" Namespace="DevExpress.Web.ASPxScheduler" TagPrefix="dxwschs" %>
+<%@ Register Assembly="DevExpress.Web.ASPxScheduler.v13.1" Namespace="DevExpress.Web.ASPxScheduler.Controls"
+    TagPrefix="cc1" %>
+<%@ Register Assembly="DevExpress.Web.v13.1" Namespace="DevExpress.Web.ASPxEditors"
+    TagPrefix="dxe" %>
 <table cellpadding="2"; cellspacing="0" style="width:100%; height:100%">
-	<tr>
-		<td style="width:100%" >
-			<dxe:ASPxMemo ClientInstanceName="_dx" ID="memSubject" runat="server" Width="100%" Rows="5" Text='<%#(CType(Container, AppointmentInplaceEditorTemplateContainer)).Appointment.Subject%>'>
-			</dxe:ASPxMemo>
-		</td>
-		<td valign="top" >
+    <tr>
+        <td style="width:100%" >
+            <dxe:ASPxMemo ClientInstanceName="_dx" ID="memSubject" runat="server" Width="100%" Rows="5" Text='<%#CType(Container, AppointmentInplaceEditorTemplateContainer).Appointment.Subject%>'>
+            </dxe:ASPxMemo>
+        </td>
+        <td valign="top" >
 
-		<div>
-			<cc1:NoBorderButton runat="server" ClientInstanceName="_dx" ID="btnSave" Width="19px" Height="19px" ToolTip="Save" 
-				Image-IsResourcePng="True">
-			</cc1:NoBorderButton> 
-		</div>
+        <div>
+            <cc1:NoBorderButton runat="server" ClientInstanceName="_dx" ID="btnSave" Width="19px" Height="19px" ToolTip="Save" 
+                Image-IsResourcePng="True">
+            </cc1:NoBorderButton> 
+        </div>
 
-		<div style="padding-top:1px;">
-			<cc1:NoBorderButton runat="server" ClientInstanceName="_dx" ID="btnCancel" Width="19px" Height="19px" ToolTip="Cancel" 
-				 CausesValidation="False" Image-IsResourcePng="True">
-			</cc1:NoBorderButton> 
-		</div>
+        <div style="padding-top:1px;">
+            <cc1:NoBorderButton runat="server" ClientInstanceName="_dx" ID="btnCancel" Width="19px" Height="19px" ToolTip="Cancel" 
+                 CausesValidation="False" Image-IsResourcePng="True">
+            </cc1:NoBorderButton> 
+        </div>
 
-		<div style="padding-top:6px;">
-			<cc1:NoBorderButton runat="server" ClientInstanceName="_dx" ID="btnEditForm" Width="19px" Height="19px" ToolTip="Open Edit Form..." 
-				CausesValidation="False" Image-IsResourcePng="True">
-			</cc1:NoBorderButton>
-		</div>
-		</td>
-	</tr>
+        <div style="padding-top:6px;">
+            <cc1:NoBorderButton runat="server" ClientInstanceName="_dx" ID="btnEditForm" Width="19px" Height="19px" ToolTip="Open Edit Form..." 
+                CausesValidation="False" Image-IsResourcePng="True">
+            </cc1:NoBorderButton>
+        </div>
+        </td>
+    </tr>
 </table>

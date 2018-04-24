@@ -27,6 +27,10 @@
     <IsWebBootstrapper>false</IsWebBootstrapper>
     <UseApplicationTrust>false</UseApplicationTrust>
     <BootstrapperEnabled>true</BootstrapperEnabled>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionStrict>Off</OptionStrict>
+    <OptionInfer>On</OptionInfer>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -46,41 +50,41 @@
     <ErrorReport>prompt</ErrorReport>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="DevExpress.Printing.v12.2.Core">
-      <Private>True</Private>
-      <HintPath>c:\Projects\Workers\Worker78\TestFolder\Dlls\12.2.2\DevExpress.Printing.v12.2.Core.dll</HintPath>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Data" />
+    <Import Include="System" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Printing.v13.1.Core">
+      <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="DevExpress.Data.v12.2">
-      <Private>True</Private>
-      <HintPath>c:\Projects\Workers\Worker78\TestFolder\Dlls\12.2.2\DevExpress.Data.v12.2.dll</HintPath>
+    <Reference Include="DevExpress.Data.v13.1">
+      <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="DevExpress.ExpressApp.Xpo.v12.2">
-      <Private>True</Private>
-      <HintPath>c:\Projects\Workers\Worker78\TestFolder\Dlls\12.2.2\DevExpress.ExpressApp.Xpo.v12.2.dll</HintPath>
+    <Reference Include="DevExpress.ExpressApp.Xpo.v13.1">
+      <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="DevExpress.ExpressApp.v12.2">
-      <Private>True</Private>
-      <HintPath>c:\Projects\Workers\Worker78\TestFolder\Dlls\12.2.2\DevExpress.ExpressApp.v12.2.dll</HintPath>
+    <Reference Include="DevExpress.ExpressApp.v13.1">
+      <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="DevExpress.ExpressApp.Objects.v12.2">
-      <Private>True</Private>
-      <HintPath>c:\Projects\Workers\Worker78\TestFolder\Dlls\12.2.2\DevExpress.ExpressApp.Objects.v12.2.dll</HintPath>
+    <Reference Include="DevExpress.ExpressApp.Objects.v13.1">
+      <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="DevExpress.ExpressApp.Validation.v12.2">
-      <Private>True</Private>
-      <HintPath>c:\Projects\Workers\Worker78\TestFolder\Dlls\12.2.2\DevExpress.ExpressApp.Validation.v12.2.dll</HintPath>
+    <Reference Include="DevExpress.ExpressApp.Validation.v13.1">
+      <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="DevExpress.Persistent.Base.v12.2">
-      <Private>True</Private>
-      <HintPath>c:\Projects\Workers\Worker78\TestFolder\Dlls\12.2.2\DevExpress.Persistent.Base.v12.2.dll</HintPath>
+    <Reference Include="DevExpress.Persistent.Base.v13.1">
+      <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="DevExpress.Persistent.BaseImpl.v12.2">
-      <Private>True</Private>
-      <HintPath>c:\Projects\Workers\Worker78\TestFolder\Dlls\12.2.2\DevExpress.Persistent.BaseImpl.v12.2.dll</HintPath>
+    <Reference Include="DevExpress.Persistent.BaseImpl.v13.1">
+      <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="DevExpress.Xpo.v12.2">
-      <Private>True</Private>
-      <HintPath>c:\Projects\Workers\Worker78\TestFolder\Dlls\12.2.2\DevExpress.Xpo.v12.2.dll</HintPath>
+    <Reference Include="DevExpress.Xpo.v13.1">
+      <SpecificVersion>False</SpecificVersion>
     </Reference>
     <Reference Include="System">
       <Name>System</Name>

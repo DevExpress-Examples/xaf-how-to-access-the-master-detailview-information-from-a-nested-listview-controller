@@ -1,4 +1,4 @@
-<%--
+﻿<%--
 {************************************************************************************}
 {                                                                                    }
 {   DO NOT MODIFY THIS FILE!                                                         }
@@ -33,43 +33,43 @@
 {************************************************************************************}
 --%>
 <%@ Control Language="vb" AutoEventWireup="true" Inherits="RecurrentAppointmentDeleteForm" Codebehind="RecurrentAppointmentDeleteForm.ascx.vb" %>
-<%@ Register Assembly="DevExpress.Web.ASPxScheduler.v12.2" Namespace="DevExpress.Web.ASPxScheduler" TagPrefix="dxwschs" %>
-<%@ Register Assembly="DevExpress.Web.v12.2" Namespace="DevExpress.Web.ASPxEditors" TagPrefix="dxe" %>
+<%@ Register Assembly="DevExpress.Web.ASPxScheduler.v13.1" Namespace="DevExpress.Web.ASPxScheduler" TagPrefix="dxwschs" %>
+<%@ Register Assembly="DevExpress.Web.v13.1" Namespace="DevExpress.Web.ASPxEditors" TagPrefix="dxe" %>
 
 <table style="width:100%; height:100%">
-	<tr>
-		<td rowspan="2"  style="vertical-align:top;">
-			<dxe:ASPxImage id="imgWarning" runat="server" EnableViewState="False">
-			</dxe:ASPxImage>
-		</td>
-		<td style="width:100%;">
-			<dxe:ASPxLabel ID="lblConfirm" runat="server" Text='<%#"Do you want to delete all occurrences of the recurring appointment """ & (CType(Container, DevExpress.Web.ASPxScheduler.RecurrentAppointmentDeleteFormTemplateContainer)).Appointment.Subject & """, or just this one?"%>'/>
-		</td>
-	</tr>
-	<tr>
-		<td style="width:100%;">
-			<dxe:ASPxRadioButtonList ID="rbAction" runat="server" ValueType="System.Int32" SelectedIndex="0">
-								<Border BorderStyle="None" />
-								<Items>
-									<dxe:ListEditItem Text="The series" Value="1" />
-									<dxe:ListEditItem Text="This occurrence" Value="2" />
-								</Items>
-							</dxe:ASPxRadioButtonList>
-		</td>
-	</tr>
-	<tr>
-		<td align="center" style="width:100%" colspan="2">
-			<table>
-				<tr>
-					<td>
-						<dxe:ASPxButton ID="btnOk" ClientInstanceName="_dx" runat="server" Text="OK" UseSubmitBehavior="false" AutoPostBack="false" EnableViewState="false" Width="91px" />
-					</td>
-					<td>
-						<dxe:ASPxButton ID="btnCancel" ClientInstanceName="_dx" runat="server" Text="Cancel" UseSubmitBehavior="false" AutoPostBack="false" EnableViewState="false" 
-							Width="91px" CausesValidation="False" />
-					</td>
-				</tr>
-			</table>
-		</td>
-	</tr>
+    <tr>
+        <td rowspan="2"  style="vertical-align:top;">
+            <dxe:ASPxImage id="imgWarning" runat="server" EnableViewState="False">
+            </dxe:ASPxImage>
+        </td>
+        <td style="width:100%;">
+            <dxe:ASPxLabel ID="lblConfirm" runat="server" Text='<%#"Do you want to delete all occurrences of the recurring appointment """ & CType(Container, DevExpress.Web.ASPxScheduler.RecurrentAppointmentDeleteFormTemplateContainer).Appointment.Subject & """, or just this one?"%>'/>
+        </td>
+    </tr>
+    <tr>
+        <td style="width:100%;">
+            <dxe:ASPxRadioButtonList ID="rbAction" runat="server" ValueType="System.Int32" SelectedIndex="0">
+                                <Border BorderStyle="None" />
+                                <Items>
+                                    <dxe:ListEditItem Text="The series" Value="1" />
+                                    <dxe:ListEditItem Text="This occurrence" Value="2" />
+                                </Items>
+                            </dxe:ASPxRadioButtonList>
+        </td>
+    </tr>
+    <tr>
+        <td align="center" style="width:100%" colspan="2">
+            <table>
+                <tr>
+                    <td>
+                        <dxe:ASPxButton ID="btnOk" ClientInstanceName="_dx" runat="server" Text="OK" UseSubmitBehavior="false" AutoPostBack="false" EnableViewState="false" Width="91px" />
+                    </td>
+                    <td>
+                        <dxe:ASPxButton ID="btnCancel" ClientInstanceName="_dx" runat="server" Text="Cancel" UseSubmitBehavior="false" AutoPostBack="false" EnableViewState="false" 
+                            Width="91px" CausesValidation="False" />
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
 </table>

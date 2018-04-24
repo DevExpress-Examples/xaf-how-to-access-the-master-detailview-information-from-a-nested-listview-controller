@@ -1,4 +1,4 @@
-Microsoft Visual Studio Solution File, Format Version 9.00
+﻿Microsoft Visual Studio Solution File, Format Version 9.00
 # Visual Studio 2005
 Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "WinWebSolution.Module", "WinWebSolution.Module\WinWebSolution.Module.vbproj", "{F49E8AEA-1016-45AE-9D24-4742671AD3FA}"
 	ProjectSection(WebsiteProperties) = preProject

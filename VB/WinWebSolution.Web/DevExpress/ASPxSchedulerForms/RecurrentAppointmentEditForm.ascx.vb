@@ -1,4 +1,4 @@
-'
+﻿'
 '{************************************************************************************}
 '{                                                                                    }
 '{   DO NOT MODIFY THIS FILE!                                                         }
@@ -33,32 +33,31 @@
 '{************************************************************************************}
 '
 
-
-Imports Microsoft.VisualBasic
 Imports System
 Imports DevExpress.Web.ASPxScheduler
 Imports DevExpress.Web.ASPxEditors
 
 Partial Public Class RecurrentAppointmentEditForm
-	Inherits SchedulerFormControl
-	Protected Sub Page_Load(ByVal sender As Object, ByVal e As EventArgs)
-		'PrepareChildControls();
-	End Sub
+    Inherits SchedulerFormControl
 
-	Public Overrides Sub DataBind()
-		MyBase.DataBind()
+    Protected Sub Page_Load(ByVal sender As Object, ByVal e As EventArgs)
+        'PrepareChildControls();
+    End Sub
 
-		Dim container As RecurrentAppointmentEditFormTemplateContainer = CType(Parent, RecurrentAppointmentEditFormTemplateContainer)
+    Public Overrides Sub DataBind()
+        MyBase.DataBind()
 
-		btnOk.ClientSideEvents.Click = container.ApplyHandler
-		btnCancel.ClientSideEvents.Click = container.CancelHandler
-	End Sub
-	Protected Overrides Function GetChildEditors() As ASPxEditBase()
-		Dim edits() As ASPxEditBase = { lblConfirm, rbAction }
-		Return edits
-	End Function
-	Protected Overrides Function GetChildButtons() As ASPxButton()
-		Dim buttons() As ASPxButton = { btnOk, btnCancel }
-		Return buttons
-	End Function
+        Dim container As RecurrentAppointmentEditFormTemplateContainer = CType(Parent, RecurrentAppointmentEditFormTemplateContainer)
+
+        btnOk.ClientSideEvents.Click = container.ApplyHandler
+        btnCancel.ClientSideEvents.Click = container.CancelHandler
+    End Sub
+    Protected Overrides Function GetChildEditors() As ASPxEditBase()
+        Dim edits() As ASPxEditBase = { lblConfirm, rbAction }
+        Return edits
+    End Function
+    Protected Overrides Function GetChildButtons() As ASPxButton()
+        Dim buttons() As ASPxButton = { btnOk, btnCancel }
+        Return buttons
+    End Function
 End Class

@@ -1,4 +1,4 @@
-<%--
+﻿<%--
 {************************************************************************************}
 {                                                                                    }
 {   DO NOT MODIFY THIS FILE!                                                         }
@@ -32,42 +32,42 @@
 --%>
 
 <%@ Control Language="vb" AutoEventWireup="true" Inherits="GotoDateForm" Codebehind="GotoDateForm.ascx.vb" %>
-<%@ Register Assembly="DevExpress.Web.ASPxScheduler.v12.2" Namespace="DevExpress.Web.ASPxScheduler" TagPrefix="dxwschs" %>
-<%@ Register Assembly="DevExpress.Web.v12.2" Namespace="DevExpress.Web.ASPxEditors"
-	TagPrefix="dxe" %>
+<%@ Register Assembly="DevExpress.Web.ASPxScheduler.v13.1" Namespace="DevExpress.Web.ASPxScheduler" TagPrefix="dxwschs" %>
+<%@ Register Assembly="DevExpress.Web.v13.1" Namespace="DevExpress.Web.ASPxEditors"
+    TagPrefix="dxe" %>
 
 <table style="width:100%; height:100%">
-	<tr>
-		<td>
-			<dxe:ASPxLabel ID="lblDate" runat="server" Text="Date:" />
-		</td>
-		<td style="width:100%">
-			<dxe:ASPxDateEdit ClientInstanceName="_dx" ID="edtDate" runat="server" Width="100%" Date='<%#(CType(Container, GotoDateFormTemplateContainer)).Date%>' />
-		</td> 
-	</tr>
-	<tr>
-		<td>
-			<span style="white-space: nowrap;">
-			<dxe:ASPxLabel ID="lblView" runat="server" Text="Show in:"></dxe:ASPxLabel>
-			</span>
-		</td>
-		<td style="width:100%">
-			<dxe:ASPxComboBox ClientInstanceName="_dx" ID="cbView" runat="server" Width="100%" DataSource='<%#(CType(Container, GotoDateFormTemplateContainer)).ViewsDataSource%>'></dxe:ASPxComboBox>
-		</td>
-	</tr>
-	<tr>
-		<td align="center" colspan="2" style="width:100%">
-			<table>
-				<tr>
-					<td>
-						<dxe:ASPxButton ID="btnOk" ClientInstanceName="_dx" runat="server" Text="OK" UseSubmitBehavior="false" AutoPostBack="false" EnableViewState="false" Width="91px" />
-					</td>
-					<td>
-						<dxe:ASPxButton ID="btnCancel" ClientInstanceName="_dx" runat="server" Text="Cancel" UseSubmitBehavior="false" AutoPostBack="false" EnableViewState="false" 
-							Width="91px" CausesValidation="False" />
-					</td>
-				</tr>
-			</table>
-		</td>
-	</tr>
+    <tr>
+        <td>
+            <dxe:ASPxLabel ID="lblDate" runat="server" Text="Date:" />
+        </td>
+        <td style="width:100%">
+            <dxe:ASPxDateEdit ClientInstanceName="_dx" ID="edtDate" runat="server" Width="100%" Date='<%#CType(Container, GotoDateFormTemplateContainer).Date%>' />
+        </td> 
+    </tr>
+    <tr>
+        <td>
+            <span style="white-space: nowrap;">
+            <dxe:ASPxLabel ID="lblView" runat="server" Text="Show in:"></dxe:ASPxLabel>
+            </span>
+        </td>
+        <td style="width:100%">
+            <dxe:ASPxComboBox ClientInstanceName="_dx" ID="cbView" runat="server" Width="100%" DataSource='<%#CType(Container, GotoDateFormTemplateContainer).ViewsDataSource%>'></dxe:ASPxComboBox>
+        </td>
+    </tr>
+    <tr>
+        <td align="center" colspan="2" style="width:100%">
+            <table>
+                <tr>
+                    <td>
+                        <dxe:ASPxButton ID="btnOk" ClientInstanceName="_dx" runat="server" Text="OK" UseSubmitBehavior="false" AutoPostBack="false" EnableViewState="false" Width="91px" />
+                    </td>
+                    <td>
+                        <dxe:ASPxButton ID="btnCancel" ClientInstanceName="_dx" runat="server" Text="Cancel" UseSubmitBehavior="false" AutoPostBack="false" EnableViewState="false" 
+                            Width="91px" CausesValidation="False" />
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
 </table>

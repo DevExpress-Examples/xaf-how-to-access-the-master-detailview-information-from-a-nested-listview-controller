@@ -10,53 +10,50 @@
 
 
 
-
-Imports Microsoft.VisualBasic
-Imports System
 Partial Public Class RecurrentAppointmentEditForm
 
-	''' <summary>
-	''' Image control.
-	''' </summary>
-	''' <remarks>
-	''' Auto-generated field.
-	''' To modify move field declaration from designer file to code-behind file.
-	''' </remarks>
-	Protected Image As Global.DevExpress.Web.ASPxEditors.ASPxImage
+    ''' <summary>
+    ''' Image control.
+    ''' </summary>
+    ''' <remarks>
+    ''' Auto-generated field.
+    ''' To modify move field declaration from designer file to code-behind file.
+    ''' </remarks>
+    Protected Image As Global.DevExpress.Web.ASPxEditors.ASPxImage
 
-	''' <summary>
-	''' lblConfirm control.
-	''' </summary>
-	''' <remarks>
-	''' Auto-generated field.
-	''' To modify move field declaration from designer file to code-behind file.
-	''' </remarks>
-	Protected lblConfirm As Global.DevExpress.Web.ASPxEditors.ASPxLabel
+    ''' <summary>
+    ''' lblConfirm control.
+    ''' </summary>
+    ''' <remarks>
+    ''' Auto-generated field.
+    ''' To modify move field declaration from designer file to code-behind file.
+    ''' </remarks>
+    Protected lblConfirm As Global.DevExpress.Web.ASPxEditors.ASPxLabel
 
-	''' <summary>
-	''' rbAction control.
-	''' </summary>
-	''' <remarks>
-	''' Auto-generated field.
-	''' To modify move field declaration from designer file to code-behind file.
-	''' </remarks>
-	Protected rbAction As Global.DevExpress.Web.ASPxEditors.ASPxRadioButtonList
+    ''' <summary>
+    ''' rbAction control.
+    ''' </summary>
+    ''' <remarks>
+    ''' Auto-generated field.
+    ''' To modify move field declaration from designer file to code-behind file.
+    ''' </remarks>
+    Protected rbAction As Global.DevExpress.Web.ASPxEditors.ASPxRadioButtonList
 
-	''' <summary>
-	''' btnOk control.
-	''' </summary>
-	''' <remarks>
-	''' Auto-generated field.
-	''' To modify move field declaration from designer file to code-behind file.
-	''' </remarks>
-	Protected btnOk As Global.DevExpress.Web.ASPxEditors.ASPxButton
+    ''' <summary>
+    ''' btnOk control.
+    ''' </summary>
+    ''' <remarks>
+    ''' Auto-generated field.
+    ''' To modify move field declaration from designer file to code-behind file.
+    ''' </remarks>
+    Protected btnOk As Global.DevExpress.Web.ASPxEditors.ASPxButton
 
-	''' <summary>
-	''' btnCancel control.
-	''' </summary>
-	''' <remarks>
-	''' Auto-generated field.
-	''' To modify move field declaration from designer file to code-behind file.
-	''' </remarks>
-	Protected btnCancel As Global.DevExpress.Web.ASPxEditors.ASPxButton
+    ''' <summary>
+    ''' btnCancel control.
+    ''' </summary>
+    ''' <remarks>
+    ''' Auto-generated field.
+    ''' To modify move field declaration from designer file to code-behind file.
+    ''' </remarks>
+    Protected btnCancel As Global.DevExpress.Web.ASPxEditors.ASPxButton
 End Class
