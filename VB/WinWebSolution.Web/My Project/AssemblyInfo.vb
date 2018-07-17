@@ -8,9 +8,9 @@ Imports System.Runtime.InteropServices
 <Assembly: AssemblyTitle("WinWebSolution.Web")>
 <Assembly: AssemblyDescription("")>
 <Assembly: AssemblyConfiguration("")>
-<Assembly: AssemblyCompany("-")>
+<Assembly: AssemblyCompany("")>
 <Assembly: AssemblyProduct("WinWebSolution.Web")>
-<Assembly: AssemblyCopyright("Copyright © - 2008")>
+<Assembly: AssemblyCopyright("Copyright © 2018")>
 <Assembly: AssemblyTrademark("")>
 <Assembly: AssemblyCulture("")>
 

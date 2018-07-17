@@ -26,25 +26,21 @@
             Me.module1 = New DevExpress.ExpressApp.SystemModule.SystemModule()
             Me.module2 = New DevExpress.ExpressApp.Win.SystemModule.SystemWindowsFormsModule()
             Me.module3 = New WinWebSolution.Module.WinWebSolutionModule()
-            Me.module6 = New DevExpress.ExpressApp.Objects.BusinessClassLibraryCustomizationModule()
-            Me.sqlConnection1 = New System.Data.SqlClient.SqlConnection()
-            Me.fileAttachmentsWindowsFormsModule1 = New DevExpress.ExpressApp.FileAttachments.Win.FileAttachmentsWindowsFormsModule()
             CType(Me, System.ComponentModel.ISupportInitialize).BeginInit()
-            ' 
-            ' sqlConnection1
-            ' 
-            Me.sqlConnection1.ConnectionString = "Data Source=(local);Initial Catalog=WinWebSolution;Integrated Security=SSPI;Pooli" & "ng=false"
-            Me.sqlConnection1.FireInfoMessageEventOnUserErrors = False
             ' 
             ' WinWebSolutionWindowsFormsApplication
             ' 
             Me.ApplicationName = "WinWebSolution"
-            Me.Connection = Me.sqlConnection1
+            Me.CheckCompatibilityType = DevExpress.ExpressApp.CheckCompatibilityType.DatabaseSchema
             Me.Modules.Add(Me.module1)
             Me.Modules.Add(Me.module2)
-            Me.Modules.Add(Me.module6)
             Me.Modules.Add(Me.module3)
-            Me.Modules.Add(Me.fileAttachmentsWindowsFormsModule1)
+            Me.UseOldTemplates = False
+'INSTANT VB NOTE: The following InitializeComponent event wireup was converted to a 'Handles' clause:
+'ORIGINAL LINE: this.DatabaseVersionMismatch += new System.EventHandler<DevExpress.ExpressApp.DatabaseVersionMismatchEventArgs>(this.WinWebSolutionWindowsFormsApplication_DatabaseVersionMismatch);
+'INSTANT VB NOTE: The following InitializeComponent event wireup was converted to a 'Handles' clause:
+'ORIGINAL LINE: this.CustomizeLanguagesList += new System.EventHandler<DevExpress.ExpressApp.CustomizeLanguagesListEventArgs>(this.WinWebSolutionWindowsFormsApplication_CustomizeLanguagesList);
+
             CType(Me, System.ComponentModel.ISupportInitialize).EndInit()
 
         End Sub
@@ -54,8 +50,5 @@
         Private module1 As DevExpress.ExpressApp.SystemModule.SystemModule
         Private module2 As DevExpress.ExpressApp.Win.SystemModule.SystemWindowsFormsModule
         Private module3 As WinWebSolution.Module.WinWebSolutionModule
-        Private module6 As DevExpress.ExpressApp.Objects.BusinessClassLibraryCustomizationModule
-        Private sqlConnection1 As System.Data.SqlClient.SqlConnection
-        Private fileAttachmentsWindowsFormsModule1 As DevExpress.ExpressApp.FileAttachments.Win.FileAttachmentsWindowsFormsModule
     End Class
 End Namespace
