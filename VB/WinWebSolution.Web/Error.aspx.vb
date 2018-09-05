@@ -52,10 +52,6 @@ Partial Public Class ErrorPage
     End Sub
 
     Private Sub InitializeComponent()
-'INSTANT VB NOTE: The following InitializeComponent event wireup was converted to a 'Handles' clause:
-'ORIGINAL LINE: this.Load += new System.EventHandler(this.Page_Load);
-'INSTANT VB NOTE: The following InitializeComponent event wireup was converted to a 'Handles' clause:
-'ORIGINAL LINE: this.PreRender += new EventHandler(ErrorPage_PreRender);
     End Sub
 
     Private Sub ErrorPage_PreRender(ByVal sender As Object, ByVal e As EventArgs) Handles Me.PreRender

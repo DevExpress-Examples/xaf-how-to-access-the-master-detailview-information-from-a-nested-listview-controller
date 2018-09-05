@@ -9,12 +9,16 @@ Imports DevExpress.Persistent.Base
 Imports DevExpress.Persistent.BaseImpl
 
 Namespace WinWebSolution.Win
-    Friend Module Program
+    Friend NotInheritable Class Program
+
+        Private Sub New()
+        End Sub
+
         ''' <summary>
         ''' The main entry point for the application.
         ''' </summary>
-        <STAThread>
-        Sub Main()
+        <STAThread> _
+        Shared Sub Main()
 #If EASYTEST Then
             DevExpress.ExpressApp.Win.EasyTest.EasyTestRemotingRegistration.Register()
 #End If
@@ -48,5 +52,5 @@ Namespace WinWebSolution.Win
                 winApplication.HandleException(e)
             End Try
         End Sub
-    End Module
+    End Class
 End Namespace

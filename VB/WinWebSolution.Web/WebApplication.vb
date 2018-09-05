@@ -59,14 +59,10 @@ Namespace WinWebSolution.Web
                 e.Updater.Update()
                 e.Handled = True
             Else
-                Dim message As String = "The application cannot connect to the specified database, " &
-                    "because the database doesn't exist, its version is older " &
-                    "than that of the application or its schema does not match " &
-                    "the ORM data model structure. To avoid this error, use one " &
-                    "of the solutions from the https://www.devexpress.com/kb=T367835 KB Article."
+                Dim message As String = "The application cannot connect to the specified database, " & "because the database doesn't exist, its version is older " & "than that of the application or its schema does not match " & "the ORM data model structure. To avoid this error, use one " & "of the solutions from the https://www.devexpress.com/kb=T367835 KB Article."
 
                 If e.CompatibilityError IsNot Nothing AndAlso e.CompatibilityError.Exception IsNot Nothing Then
-                    message &= vbCrLf & vbCrLf & "Inner exception: " & e.CompatibilityError.Exception.Message
+                    message &= ControlChars.CrLf & ControlChars.CrLf & "Inner exception: " & e.CompatibilityError.Exception.Message
                 End If
                 Throw New InvalidOperationException(message)
             End If
@@ -85,8 +81,6 @@ Namespace WinWebSolution.Web
             Me.Modules.Add(Me.module1)
             Me.Modules.Add(Me.module2)
             Me.Modules.Add(Me.module3)
-'INSTANT VB NOTE: The following InitializeComponent event wireup was converted to a 'Handles' clause:
-'ORIGINAL LINE: this.DatabaseVersionMismatch += new System.EventHandler<DevExpress.ExpressApp.DatabaseVersionMismatchEventArgs>(this.WinWebSolutionAspNetApplication_DatabaseVersionMismatch);
             DirectCast(Me, System.ComponentModel.ISupportInitialize).EndInit()
 
         End Sub

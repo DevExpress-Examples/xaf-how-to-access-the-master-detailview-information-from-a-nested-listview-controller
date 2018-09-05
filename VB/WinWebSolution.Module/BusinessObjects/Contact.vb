@@ -3,7 +3,7 @@ Imports DevExpress.Persistent.Base
 Imports DevExpress.Persistent.BaseImpl
 
 Namespace WinWebSolution.Module
-    <DefaultClassOptions>
+    <DefaultClassOptions> _
     Public Class Contact
         Inherits Person
 

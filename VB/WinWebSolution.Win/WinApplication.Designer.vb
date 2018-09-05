@@ -36,10 +36,6 @@
             Me.Modules.Add(Me.module2)
             Me.Modules.Add(Me.module3)
             Me.UseOldTemplates = False
-'INSTANT VB NOTE: The following InitializeComponent event wireup was converted to a 'Handles' clause:
-'ORIGINAL LINE: this.DatabaseVersionMismatch += new System.EventHandler<DevExpress.ExpressApp.DatabaseVersionMismatchEventArgs>(this.WinWebSolutionWindowsFormsApplication_DatabaseVersionMismatch);
-'INSTANT VB NOTE: The following InitializeComponent event wireup was converted to a 'Handles' clause:
-'ORIGINAL LINE: this.CustomizeLanguagesList += new System.EventHandler<DevExpress.ExpressApp.CustomizeLanguagesListEventArgs>(this.WinWebSolutionWindowsFormsApplication_CustomizeLanguagesList);
 
             CType(Me, System.ComponentModel.ISupportInitialize).EndInit()
 

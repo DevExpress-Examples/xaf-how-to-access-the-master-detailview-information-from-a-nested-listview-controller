@@ -21,7 +21,7 @@ Namespace My.Resources
     ' To add or remove a member, edit your .ResX file then rerun ResGen
     ' with the /str option, or rebuild your VS project.
     <Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "4.0.0.0"), Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), Global.System.Runtime.CompilerServices.CompilerGeneratedAttribute(), _
-    Global.Microsoft.VisualBasic.HideModuleNameAttribute()>
+    Global.Microsoft.VisualBasic.HideModuleNameAttribute()> _
     Friend Module Resources
 
         Private resourceMan As Global.System.Resources.ResourceManager
@@ -35,7 +35,7 @@ Namespace My.Resources
         ''' <summary>
         '''   Returns the cached ResourceManager instance used by this class.
         ''' </summary>
-        <Global.System.ComponentModel.EditorBrowsableAttribute(Global.System.ComponentModel.EditorBrowsableState.Advanced)>
+        <Global.System.ComponentModel.EditorBrowsableAttribute(Global.System.ComponentModel.EditorBrowsableState.Advanced)> _
         Friend ReadOnly Property ResourceManager() As Global.System.Resources.ResourceManager
             Get
                 If Object.ReferenceEquals(resourceMan, Nothing) Then
@@ -50,7 +50,7 @@ Namespace My.Resources
         '''   Overrides the current thread's CurrentUICulture property for all
         '''   resource lookups using this strongly typed resource class.
         ''' </summary>
-        <Global.System.ComponentModel.EditorBrowsableAttribute(Global.System.ComponentModel.EditorBrowsableState.Advanced)>
+        <Global.System.ComponentModel.EditorBrowsableAttribute(Global.System.ComponentModel.EditorBrowsableState.Advanced)> _
         Friend Property Culture() As Global.System.Globalization.CultureInfo
             Get
                 Return resourceCulture

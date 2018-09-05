@@ -13,7 +13,7 @@ Namespace WinWebSolution.Module
         End Sub
         Protected Overrides Sub OnActivated()
             MyBase.OnActivated()
-            For Each lpe As ListPropertyEditor In (CType(View, DetailView)).GetItems(Of ListPropertyEditor)()
+            For Each lpe As ListPropertyEditor In CType(View, DetailView).GetItems(Of ListPropertyEditor)()
                 If lpe.Frame IsNot Nothing Then
                     CustomizeMasterDetailViewInfo(lpe.Frame)
                 Else
