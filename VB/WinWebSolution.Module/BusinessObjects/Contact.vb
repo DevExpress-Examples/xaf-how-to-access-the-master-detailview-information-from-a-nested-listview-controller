@@ -1,9 +1,10 @@
-﻿Imports DevExpress.Xpo
+Imports DevExpress.Xpo
 Imports DevExpress.Persistent.Base
 Imports DevExpress.Persistent.BaseImpl
 
 Namespace WinWebSolution.Module
-    <DefaultClassOptions> _
+
+    <DefaultClassOptions>
     Public Class Contact
         Inherits Person
 
