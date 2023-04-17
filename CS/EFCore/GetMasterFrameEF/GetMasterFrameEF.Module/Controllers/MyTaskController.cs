@@ -1,5 +1,5 @@
 ﻿using DevExpress.ExpressApp;
-using dxTestSolution.Module.BusinessObjects;
+using GetMasterFrame.Module.BusinessObjects;
 
 namespace GetMasterFrame.Module.Controllers {
     public class MyTaskController : NestedListViewFrameController {
