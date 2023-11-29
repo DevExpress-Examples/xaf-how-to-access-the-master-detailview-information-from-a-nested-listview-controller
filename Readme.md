@@ -21,6 +21,6 @@ For demostration purposes, we created [ContactController](./CS/EFCore/GetMasterF
 
 ## Documentation
 
-* [How to: Access Master Detail View and Nested List View Environment](https://docs.devexpress.com/eXpressAppFramework/113161/ui-construction/ways-to-access-ui-elements-and-their-controls/how-to-access-master-detail-view-and-nested-list-view-environment)
+* [How to: Access a Master Detail View and Nested List View Environment](https://docs.devexpress.com/eXpressAppFramework/113161/ui-construction/ways-to-access-ui-elements-and-their-controls/how-to-access-master-detail-view-and-nested-list-view-environment)
 * [Ways to Access UI Elements and Their Controls](https://docs.devexpress.com/eXpressAppFramework/120092/ui-construction/ways-to-access-ui-elements-and-their-controls/ways-to-access-ui-elements-and-their-controls)
 
