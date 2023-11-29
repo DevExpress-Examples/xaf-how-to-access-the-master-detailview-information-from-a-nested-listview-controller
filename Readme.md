@@ -5,7 +5,7 @@
 
 # XAF - How to access the master Detail View information from a nested List View controller
 
-This example shows how retrieve master Detail View Frame from the controller for a nested List View. There are base controllers that show how to accomplish this task:
+This example shows how retrieve a master Detail View Frame from the controller for a nested List View. The following controllers show how to accomplish this task:
 
 * [MasterDetailViewController](./CS/EFCore/GetMasterFrameEF/GetMasterFrameEF.Module/Controllers/MasterDetailViewController.cs)
 * [NestedListViewFrameController](./CS/EFCore/GetMasterFrameEF/GetMasterFrameEF.Module/Controllers/NestedListViewFrameController.cs)
