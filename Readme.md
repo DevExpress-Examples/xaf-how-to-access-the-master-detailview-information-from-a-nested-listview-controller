@@ -10,7 +10,7 @@ This example shows how retrieve a master Detail View Frame from the controller f
 * [MasterDetailViewController](./CS/EFCore/GetMasterFrameEF/GetMasterFrameEF.Module/Controllers/MasterDetailViewController.cs)
 * [NestedListViewFrameController](./CS/EFCore/GetMasterFrameEF/GetMasterFrameEF.Module/Controllers/NestedListViewFrameController.cs)
 
-For demostration purposes, we created [ContactController](./CS/EFCore/GetMasterFrameEF/GetMasterFrameEF.Module/Controllers/NestedListViewFrameController.cs) (inherited from `MasterDetailViewController`) and [MyTaskController](./CS/EFCore/GetMasterFrameEF/GetMasterFrameEF.Module/Controllers/MyTaskController.cs) (inherited from `NestedListViewFrameController`), that show how to change a value of a master detail view Action's caption according to the object selected in a nested list view.
+For demostration purposes, we created [ContactController](./CS/EFCore/GetMasterFrameEF/GetMasterFrameEF.Module/Controllers/NestedListViewFrameController.cs) (inherited from `MasterDetailViewController`) and [MyTaskController](./CS/EFCore/GetMasterFrameEF/GetMasterFrameEF.Module/Controllers/MyTaskController.cs) (inherited from `NestedListViewFrameController`) that show how to change a value of a master detail view Action's caption according to the object selected in the nested list view.
 
 <kbd>![chrome_6sfQlAxVjx](https://user-images.githubusercontent.com/14300209/232497611-742c1cb4-6b9e-4a7c-9236-15fa4f20de0b.gif)</kbd>
 
