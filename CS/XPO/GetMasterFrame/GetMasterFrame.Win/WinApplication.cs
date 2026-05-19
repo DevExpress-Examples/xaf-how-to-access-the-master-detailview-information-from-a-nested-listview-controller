@@ -14,7 +14,6 @@ public class GetMasterFrameWindowsFormsApplication : WinApplication {
 		SplashScreen = new DXSplashScreen(typeof(XafSplashScreen), new DefaultOverlayFormOptions());
         ApplicationName = "GetMasterFrame";
         CheckCompatibilityType = DevExpress.ExpressApp.CheckCompatibilityType.DatabaseSchema;
-        UseOldTemplates = false;
         DatabaseVersionMismatch += GetMasterFrameWindowsFormsApplication_DatabaseVersionMismatch;
         CustomizeLanguagesList += GetMasterFrameWindowsFormsApplication_CustomizeLanguagesList;
     }
